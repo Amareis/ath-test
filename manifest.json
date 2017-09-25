@@ -33,6 +33,6 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./",
+  "start_url": "/ath-test/",
   "display": "standalone"
 }
