@@ -9,7 +9,7 @@ self.addEventListener('fetch', function(e) {
         } else {
             return fetch(e.request).then(function (resp) {
                 const clone = resp.clone()
-                caches.open(v).then(function (cache) {
+                caches.open('test').then(function (cache) {
                     cache.put(e.request, clone)
                 })
                 return resp
